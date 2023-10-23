@@ -12,6 +12,7 @@ import {
   Music,
   Settings,
   VideoIcon,
+  CaseSensitive,
 } from "lucide-react";
 import { usePathname } from "next/navigation";
 
@@ -32,6 +33,12 @@ const routes = [
     icon: MessageSquare,
     href: "/conversation",
     color: "text-violet-500",
+  },
+  {
+    label: "Grammar Checker",
+    icon: CaseSensitive,
+    href: "/grammar",
+    color: "text-yellow-500",
   },
   {
     label: "Image Generation",

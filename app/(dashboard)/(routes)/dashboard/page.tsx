@@ -2,20 +2,14 @@
 
 import {
   ArrowRight,
+  CaseSensitive,
   Code,
   ImageIcon,
   MessageSquare,
   Music,
   VideoIcon,
 } from "lucide-react";
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardFooter,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card";
+import { Card } from "@/components/ui/card";
 import { cn } from "@/lib/utils";
 import { useRouter } from "next/navigation";
 
@@ -28,11 +22,11 @@ const tools = [
     href: "/conversation",
   },
   {
-    label: "Music Generation",
-    icon: Music,
-    color: "text-emerald-500",
-    bgColor: "bg-emerald-500/10",
-    href: "/music",
+    label: "Grammar",
+    icon: CaseSensitive,
+    color: "text-yellow-500",
+    bgColor: "bg-yellow-500/10",
+    href: "/grammar",
   },
   {
     label: "Image Generation",
@@ -47,6 +41,13 @@ const tools = [
     color: "text-orange-700",
     bgColor: "bg-orange-700/10",
     href: "/video",
+  },
+  {
+    label: "Music Generation",
+    icon: Music,
+    color: "text-emerald-500",
+    bgColor: "bg-emerald-500/10",
+    href: "/music",
   },
   {
     label: "Code Generation",
